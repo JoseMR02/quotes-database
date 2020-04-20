@@ -1,0 +1,15 @@
+<%- include ('partials/header'); -%>
+<div class='container'>
+	<div class='jumbotron'>
+		<h1> By gender </h1>
+		<form action='/gender' method='GET'>
+			<input type="radio" id="male" name="gender" value="M">
+				<label for="male">Male</label><br>
+			<input type="radio" id="female" name="gender" value="F">
+				<label for="female">Female</label><br>
+			<button class='btn btn-primary btn-block'>Search Author</button>
+			<button class='btn btn-warning btn-block' onclick='location.href="/";' background-color='red'>Change Search Type</button>
+		</form>
+	</div>
+</div>
+<%- include ('partials/footer'); -%>

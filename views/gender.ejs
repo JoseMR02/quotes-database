@@ -1,0 +1,9 @@
+<%- include ('partials/header'); -%>
+<h1> Quotes in this category: </h1>
+    <ul>
+        <%quotes.forEach(function(q){%>
+            <li><%=q%> -<%=names.firstName%></li>
+        <%});%>
+    </ul>
+    <button class='col-sm-4 btn btn-info btn-block'onclick='location.href="/";'>Search Again</button>
+<%- include ('partials/footer'); -%>
